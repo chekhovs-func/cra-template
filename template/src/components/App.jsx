@@ -2,8 +2,8 @@ import '../styles/app.scss';
 
 export default function App() {
   return (
-    <section>
+    <main>
       <h1>It's alive!</h1>
-    </section>
+    </main>
   );
 }
