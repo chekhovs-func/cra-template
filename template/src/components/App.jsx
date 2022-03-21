@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import styled from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -6,8 +7,9 @@ const GlobalStyle = createGlobalStyle`
   box-sizing: border-box;
   padding: 0;
 }
+`;
 
-main {
+const StyledApp = styled.main`
   justify-content: center;
   align-items: center;
 
@@ -16,22 +18,20 @@ main {
   width: 100vw;
   height: 100vh;
 
-  background-color: rgba(0, 0, 0, 100%);
+  background-color: #00252a;
 
   h1 {
-    color: rgba(255, 255, 255, 100%);
+    font-size: 102px;
   }
-}
-
 `;
 
 export default function App() {
   return (
     <>
       <GlobalStyle />
-      <main>
-        <h1>It's alive!</h1>
-      </main>
+      <StyledApp>
+        <h1>👍</h1>
+      </StyledApp>
     </>
   );
 }
