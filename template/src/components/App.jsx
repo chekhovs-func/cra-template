@@ -1,37 +1,9 @@
-import { createGlobalStyle } from 'styled-components';
-import styled from 'styled-components';
-
-const GlobalStyle = createGlobalStyle`
-  * {
-  margin: 0;
-  box-sizing: border-box;
-  padding: 0;
-}
-`;
-
-const StyledApp = styled.main`
-  justify-content: center;
-  align-items: center;
-
-  display: flex;
-
-  width: 100vw;
-  height: 100vh;
-
-  background-color: #00252a;
-
-  h1 {
-    font-size: 102px;
-  }
-`;
-
 export default function App() {
   return (
-    <>
-      <GlobalStyle />
-      <StyledApp>
-        <h1>👍</h1>
-      </StyledApp>
-    </>
+    <main className='justify-center items-center flex min-h-screen bg-emerald-50 font-mono'>
+      <h1 className='justify-center items-center flex border-2 border-emerald-500 rounded-sm p-6 bg-emerald-100 text-2xl font-medium text-emerald-500'>
+        chekhovs-func
+      </h1>
+    </main>
   );
 }
